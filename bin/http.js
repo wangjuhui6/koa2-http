@@ -12,6 +12,6 @@ const port = 10003
 app.use(serve(path.join(process.cwd(), name || '')))
 
 app.listen(port, () => {
-  console.log('接口指向目录', path.join(process.cwd(), name || ''))
+  console.log('端口指向目录', path.join(process.cwd(), name || ''))
   console.log(`Server in running at http://localhost:${port}`)
 })
